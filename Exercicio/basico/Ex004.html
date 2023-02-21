@@ -4,37 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Exercicio 04</title>
-    <style>
-        h1{
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        input{
-            font-size: 20px;
-            width: 250px;
-            height: 100px;
-        }
-
-        #resultado{
-            font-family: Arial, Helvetica, sans-serif;
-        }
-    </style>
 </head>
 <body>
-    <h1>Trabalhando com Dados v2.0</h1>
-    <input type="button" value="Clique para começar" onclick="inicio()">
-    <div id="resultado">
-        <p>Aqui vai aparecer o resultado...</p>
-    </div>
+    <main id="container">
+        <h1>Trabalhando com Dados v2.0</h1>
+        <div id="content">
+            <input type="button" value="Clique para começar" onclick="inicio()">
+        </div>
+        <div id="resultado">
+            <p>Aqui vai aparecer o resultado...</p>
+        </div>
+    </main>
 
-    <script>
-        function inicio(){
-            var nome = window.prompt('Qual é o seu nome?')
-            var res = window.document.getElementById('resultado')
-
-            res.innerHTML = `<p>Olá, <strong>${nome}</strong>! É um grande prazer te conhecer! &#x1f596;</p>`
-        }
-    </script>
+    <script src="js/script04.js"></script>
 </body>
 </html>

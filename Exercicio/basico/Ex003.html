@@ -4,28 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Exercicio 03</title>
-    <style>
-        h1{
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        input{
-            font-size: 20px;
-            width: 250px;
-            height: 100px;
-        }
-    </style>
 </head>
 <body>
-    <h1>Trabalhando com dados v1.0</h1>
-    <input type="button" value="Clique para começar" onclick="inicio()">
+    <main id="container">
+        <h1>Trabalhando com dados v1.0</h1>
+        <div id="content">
+            <input type="button" value="Clique para começar" onclick="inicio()">
+        </div>
+    </main>
 
-    <script>
-        function inicio(){
-            var nome = window.prompt('Qual é o seu nome?')
-            window.alert(`Olá, ${nome}! É um prazer te conhecer!`)
-        }
-    </script>
+    <script src="js/script03.js"></script>
 </body>
 </html>
