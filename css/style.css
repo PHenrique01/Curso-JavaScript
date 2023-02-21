@@ -30,7 +30,7 @@ body{
 
 #container{
     background-color: var(--cor4);
-    width: 60vw;
+    width: 50vw;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 4px 4px 8px #24282ba4;
@@ -38,6 +38,9 @@ body{
     top: 30%;
     left: 50%;
     transform: translate(-50%, -30%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #container #TextCenter1{
@@ -55,12 +58,13 @@ body{
 /* Content */
 
 #content{
-    text-align: center;
     margin-top: 25px;
     padding: 10px;
 }
 
 #content ul li{
+    display: flex;
+    justify-content: center;
     line-height: 40px;
 }
 
@@ -77,3 +81,37 @@ body{
 }
 
 /* ----------- */
+
+@media (max-width: 680px){
+    #container{
+        width: 80vw;
+    }
+
+    #container #TextCenter1{
+        font-size: 30px;
+        font-weight: 500;
+        text-align: center;  
+    }
+
+    #container #TextCenter2{
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    #content ul li a{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 458px){
+    #container #TextCenter1{
+        font-size: 28px;
+        font-weight: 600;
+        text-align: center;  
+    }
+
+    #container #TextCenter2{
+        font-size: 18px;
+        font-weight: 700;
+    }
+}
