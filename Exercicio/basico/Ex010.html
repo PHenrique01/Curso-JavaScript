@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 10</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        input{
+            font-size: 20px;
+            width: 200px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript</h1>
+    <input type="button" value="Ação 1" onclick="acao1()">
+    <input type="button" value="Ação 2" onclick="acao2()">
+    <input type="button" value="Ação 3" onclick="acao3()">
+    <input type="button" value="Ação 4" onclick="acao4()">
+    <div id="res">
+        <p>Aqui vou registrar suas ações com os botões acima.</p>
+    </div>
+
+    <script>
+        var res = window.document.getElementById('res')
+
+        function acao1(){
+            res.innerHTML += '<p>Clicou no primeiro botão</p>'
+        }
+
+        function acao2(){
+            res.innerHTML += '<p>Clicou no segundo botão</p>'
+        }
+
+        function acao3(){
+            res.innerHTML += '<p>Clicou no terceiro botão</p>'
+        }
+
+        function acao4(){
+            res.innerHTML += '<p>Clicou no quarto botão</p>'
+        }
+    </script>
+</body>
+</html>
