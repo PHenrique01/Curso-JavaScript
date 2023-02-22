@@ -33,7 +33,6 @@ body{
     padding: 40px;
     border-radius: 10px;
     box-shadow: 4px 4px 8px #24282ba4;
-    overflow: auto;
 }
 
 #container #TextCenter1{
@@ -87,7 +86,7 @@ body{
 
 @media (max-width: 834px){
     #container{
-        width: 80vw;
+        width: 90vw;
     }
 
     #container #TextCenter1{
@@ -101,7 +100,7 @@ body{
     }
 }
 
-@media (max-width: 547px){
+@media (max-width: 518px){
     #container #TextCenter1{
         font-size: 28px;
         font-weight: 600;
@@ -110,5 +109,14 @@ body{
     #container #TextCenter2{
         font-size: 18px;
         font-weight: 700;
+    }
+
+    .nivel .subtitulo{
+        font-size: 18px;
+        font-weight: 800;
+    }
+
+    .nivel ul li{
+        font-weight: 600;
     }
 }
