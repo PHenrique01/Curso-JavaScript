@@ -2,10 +2,11 @@ function verificar(){
     let anterior = Number(window.prompt('Qual era o preço anterior do produto?'))
     let atual = Number(window.prompt('Qual é o preço atual do produto?'))
     
-    let elemento = document.createElement('h1')
+    let elemento = document.createElement('p')
     elemento.innerHTML = `Calculando alteração de preços:`
 
     let res = document.getElementById('res')
+    res.innerHTML = ''
     let diferenca = anterior - atual
     let porcento = atual * 100 / anterior
        
@@ -20,5 +21,5 @@ function verificar(){
         elemento.innerHTML += `<br><br>- O preço abaixou R$${diferenca} em relação ao preço anterior`
         elemento.innerHTML += `<br><br>- Uma variação de ${100 -porcento}% pra baixo`
     }
-    res.appendChild(elemento) 
+    res.appendChild(elemento)
 }

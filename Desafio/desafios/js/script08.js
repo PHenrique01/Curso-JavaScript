@@ -5,6 +5,7 @@ function desconto(){
     elemento.innerHTML = `Calculando desconto de 10% no produto: ${nome}!`
 
     let res = document.getElementById('res')
+    res.innerHTML = ''
     
     let desconto = Number(reais) * 10/100
     let finaldesc = reais - desconto

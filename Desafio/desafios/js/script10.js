@@ -10,6 +10,7 @@ function calcularDelta(){
     elemento.innerHTML = `Resolvendo Bhaskara:`
 
     let res = document.getElementById('res')
+    res.innerHTML = ''
     let delta = b*b - 4 * a * c
        
     elemento.innerHTML += `<br><br>- A equação atual é ${a}x&sup2 + ${b}x + ${c} = 0`

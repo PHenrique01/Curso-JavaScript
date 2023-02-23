@@ -6,6 +6,7 @@ function reajustar(){
     elemento.innerHTML = `Calculando o reajuste do salário de ${nome} em ${reajuste}!`
 
     let res = document.getElementById('res')
+    res.innerHTML = ''
     
     let conta = Number(salario) * 10/100
     let contafinal = Number(salario) + Number(salario) * 10/100

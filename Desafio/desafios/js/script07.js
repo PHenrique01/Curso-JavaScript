@@ -5,6 +5,7 @@ function converter(){
     elemento.innerHTML = `A quantia de ${reais} reais, na cotação de ${cotacao} corresponde a...`
 
     let res = document.getElementById('res')
+    res.innerHTML = ''
     
     let dolar = Number(reais) * cotacao
    

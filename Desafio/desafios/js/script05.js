@@ -3,6 +3,7 @@ function converter(){
     let elemento = document.createElement('p')
     elemento.innerHTML = `A distância de ${metros}, corresponde a...`
     let res = document.getElementById('res')
+    res.innerHTML = ''
     
     let quilometros = Number(metros)/1000
     let hectometros = Number(metros)/100

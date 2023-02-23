@@ -7,7 +7,7 @@ function verificar(){
     }else{
     
 
-    let elemento = document.createElement('h1')
+    let elemento = document.createElement('p')
     elemento.innerHTML = `Calculando média..`
 
     let res = document.getElementById('res')

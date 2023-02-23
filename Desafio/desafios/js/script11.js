@@ -8,6 +8,7 @@ function verificar(){
     elemento.innerHTML = `Analisando o ano de ${ano}...`
 
     let res = document.getElementById('res')
+    res.innerHTML = ''
     
     if ((ano % 4 == 0) && ((ano % 100 != 0) || (ano % 400 == 0))){
         var bissexto = 'é'
