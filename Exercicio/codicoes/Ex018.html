@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Exercicio 18</title>
 </head>
-<body>
+<body onload="sortear()">
     <main id="container">
         <h1>Tente adivinhar meu número</h1>
         <div id="content">
-            <input type="button" value="Clique aqui!" onclick="sorteio()">
+            <input type="button" value="Clique aqui!" id="btn" onclick="jogar()">
         </div>
         <div id="res">
             <p>Já pensei em um valor entre 1 e 100...</p>
